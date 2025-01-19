@@ -2,6 +2,7 @@ local lsp = require('lsp-zero')
 
 lsp.preset('recommended')
 
+require("mason").setup()
 require('mason-lspconfig').setup({
 	handlers = { lsp.default_setup, }
 })
@@ -22,3 +23,7 @@ lspconfig.clangd.setup{
         }
 }
 
+
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities = vim.tbl_deep_extend('force', capabilities, require('cmp_nvim_lsp').default_capabilities())
+lspconfig.gdscript.setup(capabilities)

@@ -44,5 +44,6 @@ require("lazy").setup({
   },
   {"williamboman/mason-lspconfig.nvim"},
   {"github/copilot.vim"},
+	{"Lommix/godot.nvim"},
 })
 

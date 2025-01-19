@@ -4,8 +4,7 @@ set.relativenumber = true
 
 set.shiftwidth = 2
 set.tabstop = 2
-set.softtabstop = 2
-set.expandtab = true
+set.expandtab = false
 
 set.smartindent = true
 
