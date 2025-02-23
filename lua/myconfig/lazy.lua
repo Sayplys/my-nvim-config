@@ -45,5 +45,10 @@ require("lazy").setup({
   {"williamboman/mason-lspconfig.nvim"},
   {"github/copilot.vim"},
 	{"Lommix/godot.nvim"},
+	{"lewis6991/gitsigns.nvim"},
+	{"Isrothy/neominimap.nvim",
+		version= "v3.**.*",
+		enabled = true,
+		lazy = false,},
 })
 
